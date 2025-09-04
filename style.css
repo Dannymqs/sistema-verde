@@ -1,0 +1,115 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Área do login */
+.login-area {
+  flex: 1;
+  background: linear-gradient(135deg, #0f0, #00f);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.login-area h1 { /* ajuste de texto do login */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.login-area form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-area label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.login-area input {
+  padding: 10px;
+  border: 1px solid #8af902;
+  border-radius: 5px;
+}
+
+.login-area button {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: #039a0f;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-area button:hover { /* cor muda ao clicar no botão */
+  background: #b5fc01;
+  color: #000;
+}
+
+/* Área da imagem */
+.image-area {
+  flex: 5;
+  background: url("imagem/florest.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  overflow-y: auto;
+}
+
+/* Cards */
+.cards {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card {
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+  width: 140px;
+  transition: transform 0.3s, background 0.3s;
+  cursor: pointer;
+}
+
+.card i {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #0dff00;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #00ff0078, #0000ff6c);
+}
+
+.footer { /* Roda Pé */
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+}
+
